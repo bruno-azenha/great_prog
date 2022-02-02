@@ -1,0 +1,1 @@
+call "%~dp0\great_prog" eval GreatProg.Release.migrate
