@@ -1,14 +1,17 @@
 <div class="min-h-screen hero bg-hero-mobile md:bg-hero-desktop">
-  <div class="hero-overlay bg-opacity-60"></div> 
-  <div class="text-center hero-content text-neutral-content">
+  <div class="hero-overlay bg-opacity-40 md:bg-opacity-20 "></div> 
+  <div class="flex-col text-center text-neutral-content md:text-left md:-ml-72 md:-mt-40">
     <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">
-        <%= gettext("Hello, I'm Bruno!") %>
-      </h1> 
-      <p class="mb-5">
+      <h1 class="text-5xl font-bold">
+        <%= gettext("Hello, I'm") %>
+      </h1>
+      <h1 class="mt-1 font-bold text-8xl">
+        <%= gettext("Bruno!") %>
+      </h1>
+      <p class="mt-5 md:text-2xl">
         <%= gettext("I empower tech leaders to challenge assumptions, rewrite beliefs and discover the best versions of themselves.") %>
       </p>
-      <a href="https://forms.gle/yZ2fSGJGQmZ7ZLrn7" class="btn btn-primary">
+      <a href="https://forms.gle/yZ2fSGJGQmZ7ZLrn7" class="mt-5 btn btn-primary">
         <%= gettext("Unlock your greatness") %>
       </a>
     </div>
