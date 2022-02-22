@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-right': "url('/images/hero_right.jpg')"
+        'hero-desktop': "url('/images/hero_desktop.jpg')",
+        'hero-mobile': "url('/images/hero_mobile.jpg')"
       },
       keyframes: {
         wiggle: {
