@@ -1,0 +1,16 @@
+<div class="mx-4">
+  <div class="mt-4 text-2xl font-bold">
+    <%= gettext("Blog Posts")%>
+  </div>
+
+  <div class="mt-4">
+    <%= for post <- @posts do %>
+      <div class="">
+      </div>
+      <.blog_post_card post={post}/>
+    <% end %>
+  </div>
+</div>
+
+
+

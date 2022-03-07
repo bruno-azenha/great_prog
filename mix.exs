@@ -49,6 +49,8 @@ defmodule GreatProg.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
+      {:nimble_publisher, "~> 0.1.1"},
+      {:makeup_elixir, ">= 0.0.0"},
 
       # Additional packages
 

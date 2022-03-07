@@ -1,0 +1,16 @@
+<%= link "← All posts", to: Routes.blog_index_path(@socket, :index)%>
+
+<h1><%= @post.title %></h1>
+
+<p>
+  <time><%= @post.date %></time> by <%= @post.author %>
+</p>
+
+<p>
+  Tagged as <%= Enum.join(@post.tags, ", ") %>
+</p>
+
+
+<div class="mx-4 prose">
+  <%= raw @post.body %>
+</div>

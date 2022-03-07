@@ -11,9 +11,12 @@
   </head>
   <body class="flex flex-col h-full text-base-content font-body">
     
-    <nav class="flex px-4 py-4 text-gray-300 bg-gray-800">
+    <nav class="flex justify-between px-4 py-4 text-gray-300 bg-gray-800">
       <div class="">
-        <div class="text-xl normal-case">Greatness Programmer</div>
+        <%= link "Greatness Programmer", to: Routes.home_path(@conn, :index), class: "text-xl normal-case" %>
+      </div>
+      <div class="flex">
+        <%= link gettext("Blog"), to: Routes.blog_index_path(@conn, :index), class: "" %>
       </div>
     </nav>
 

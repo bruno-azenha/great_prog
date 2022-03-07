@@ -2,22 +2,24 @@ defmodule GreatProgWeb.Router do
   use GreatProgWeb, :router
 
   pipeline :browser do
-    plug :accepts, ["html"]
-    plug :fetch_session
-    plug :fetch_live_flash
-    plug :put_root_layout, {GreatProgWeb.LayoutView, :root}
-    plug :protect_from_forgery
-    plug :put_secure_browser_headers
+    plug(:accepts, ["html"])
+    plug(:fetch_session)
+    plug(:fetch_live_flash)
+    plug(:put_root_layout, {GreatProgWeb.LayoutView, :root})
+    plug(:protect_from_forgery)
+    plug(:put_secure_browser_headers)
   end
 
   pipeline :api do
-    plug :accepts, ["json"]
+    plug(:accepts, ["json"])
   end
 
   scope "/", GreatProgWeb do
-    pipe_through :browser
+    pipe_through(:browser)
 
-    live "/", HomeLive, :index
+    live("/", HomeLive, :index)
+    live("/blog", BlogLive.Index, :index)
+    live("/blog/:id", BlogLive.Show, :show)
   end
 
   # Other scopes may use custom stacks.
@@ -36,8 +38,8 @@ defmodule GreatProgWeb.Router do
     import Phoenix.LiveDashboard.Router
 
     scope "/" do
-      pipe_through :browser
-      live_dashboard "/dashboard", metrics: GreatProgWeb.Telemetry, ecto_repos: [GreatProg.Repo]
+      pipe_through(:browser)
+      live_dashboard("/dashboard", metrics: GreatProgWeb.Telemetry, ecto_repos: [GreatProg.Repo])
     end
   end
 end
