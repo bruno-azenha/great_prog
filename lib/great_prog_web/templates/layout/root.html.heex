@@ -11,12 +11,14 @@
   </head>
   <body class="flex flex-col h-full text-base-content font-body">
     
-    <nav class="flex justify-between px-4 py-4 text-gray-300 bg-gray-800">
-      <div class="">
-        <%= link "Greatness Programmer", to: Routes.home_path(@conn, :index), class: "text-xl normal-case" %>
-      </div>
-      <div class="flex">
-        <%= link gettext("Blog"), to: Routes.blog_index_path(@conn, :index), class: "" %>
+    <nav class="px-4 py-4 bg-gray-800 ">
+      <div class="flex justify-between text-gray-300 lg:mx-auto lg:max-w-4xl">
+        <div class="">
+          <%= link "Greatness Programmer", to: Routes.home_path(@conn, :index), class: "text-xl normal-case" %>
+        </div>
+        <div class="flex">
+          <%= link gettext("Blog"), to: Routes.blog_index_path(@conn, :index), class: "" %>
+        </div>
       </div>
     </nav>
 
@@ -29,7 +31,7 @@
       <a href="https://github.com/bruno-azenha/great_prog" class="flex items-center ml-1 group hover:text-gray-100">
         View source code
         <div class="ml-2 group-hover:animate-wiggle">
-        <%= GreatProgWeb.Icons.github() %>
+          <%= GreatProgWeb.Icons.github() %>
         </div>
       </a>
     </footer>

@@ -1,16 +1,28 @@
-<%= link "← All posts", to: Routes.blog_index_path(@socket, :index)%>
+<div class="mx-4 lg:mx-auto lg:max-w-4xl">
 
-<h1><%= @post.title %></h1>
+  <div class="mt-2 rounded bg-slate-200 ">
+    <div class="flex items-center p-2">
+      <%# Back Button %>
+      <%= link to: Routes.blog_index_path(@socket, :index) do %>
+      <div class="p-2 rounded-full bg-slate-300 hover:bg-slate-400">
+        <%= GreatProgWeb.Icons.chevron_left() %>
+      </div>
+      <% end %>
 
-<p>
-  <time><%= @post.date %></time> by <%= @post.author %>
-</p>
+      <%# Author and Publish Date %>
+      <div class="flex flex-col ml-4">
+        <div class="">
+          <%= @post.author %>
+        </div>
+        <div class="text-sm text-slate-500">
+          <time><%= @post.date %></time>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<p>
-  Tagged as <%= Enum.join(@post.tags, ", ") %>
-</p>
 
-
-<div class="mx-4 prose">
-  <%= raw @post.body %>
+  <div class="mt-8 prose">
+    <%= raw @post.body %>
+  </div>
 </div>

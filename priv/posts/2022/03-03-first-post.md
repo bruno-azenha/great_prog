@@ -2,7 +2,8 @@
   title: "Hello World!",
   author: "Bruno Azenha",
   tags: ~w(hello),
-  description: "My first blog post is here"
+  description: "My first blog post is here",
+  cover_image_url: "https://api.lorem.space/image/shoes?w=400&h=225"
 }
 ---
 # Hello World!

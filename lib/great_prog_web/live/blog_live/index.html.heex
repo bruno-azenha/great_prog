@@ -1,13 +1,11 @@
-<div class="mx-4">
+<div class="mx-4 lg:mx-auto lg:max-w-4xl">
   <div class="mt-4 text-2xl font-bold">
     <%= gettext("Blog Posts")%>
   </div>
 
-  <div class="mt-4">
+  <div class="grid gap-4 mt-4 sm:grid-cols-2">
     <%= for post <- @posts do %>
-      <div class="">
-      </div>
-      <.blog_post_card post={post}/>
+      <.live_component module={PostCardComponent} id={post.id} post={post} />
     <% end %>
   </div>
 </div>
