@@ -17,7 +17,12 @@
           <%= link "Greatness Programmer", to: Routes.home_path(@conn, :index), class: "text-xl normal-case" %>
         </div>
         <div class="flex">
-          <%= link gettext("Blog"), to: Routes.blog_index_path(@conn, :index), class: "" %>
+          <div class="">
+            <%= link gettext("Challenge"), to: Routes.blog_show_path(@conn, :show, "100-calls-challenge"), class: "" %>
+          </div>
+          <div class="ml-4">
+            <%= link gettext("Blog"), to: Routes.blog_index_path(@conn, :index), class: "" %>
+          </div>
         </div>
       </div>
     </nav>

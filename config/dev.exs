@@ -66,6 +66,7 @@ config :great_prog, GreatProgWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
+      ~r"priv/posts/.*(md)$",
       ~r"lib/great_prog_web/(live|views)/.*(ex)$",
       ~r"lib/great_prog_web/templates/.*(eex)$"
     ]

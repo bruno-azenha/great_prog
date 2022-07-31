@@ -20,6 +20,7 @@ defmodule GreatProgWeb.Router do
     live("/", HomeLive, :index)
     live("/blog", BlogLive.Index, :index)
     live("/blog/:id", BlogLive.Show, :show)
+    live("/100_calls_challenge", CallsChallengeLive.Index, :index)
   end
 
   # Other scopes may use custom stacks.
