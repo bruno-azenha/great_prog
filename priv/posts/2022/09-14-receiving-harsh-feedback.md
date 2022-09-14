@@ -7,14 +7,18 @@
 }
 ---
 
+# Receiving Harsh Feedback
+
 Sometimes, we receive harsh feedback and might feel lost without knowing what to do with it.
 It’s very easy to get defensive when receiving feedback, but it is more a sign of the feedback being poorly given than of a problem in the person receiving the feedback.
 
-When I recognise myself getting defensive, I use it as a signal that I don’t quite understand the needs of the person giving the feedback and I need to turn the feedback into something more actionable. The superpower that comes into play is Curiosity!
+When I recognize myself getting defensive, I use it as a signal that I don’t quite understand the needs of the person giving the feedback and I need to turn the feedback into something more actionable. The superpower that comes into play is Curiosity!
 
 It is time to dig a bit deeper. The answer to how to make the situation better is probably within the person/people that gave the feedback in the first place, but it is my responsibility to help them express it if they do not do it proactively.
 
-I like to follow a little process:
+I like to use the following process
+
+## The Process
 
 1. Be thankful. They’ve taken their time to help you become a better person.
 2. Find the what. Something (or many things) happened that led to negative feedback. Identify what it was so that you have a clear example to work on instead of foggy ideas.
