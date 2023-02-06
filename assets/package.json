@@ -13,6 +13,6 @@
   "dependencies": {
     "alpinejs": "^3.8.1",
     "daisyui": "^1.25.4",
-    "topbar": "^1.0.1"
+    "topbar": "^2.0.1"
   }
 }
