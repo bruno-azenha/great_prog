@@ -55,7 +55,7 @@ defmodule GreatProg.MixProject do
 
       # Additional packages
 
-      {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.6.7", only: [:dev, :test], runtime: false},
       {:sobelow, "~> 0.8", only: :dev},
       {:ecto_psql_extras, "~> 0.7"}
     ]
