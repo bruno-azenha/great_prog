@@ -17,6 +17,8 @@ defmodule GreatProgWeb do
   and import those modules here.
   """
 
+  def static_paths, do: ~w(assets fonts images favicon.ico robots.txt)
+
   def controller do
     quote do
       use Phoenix.Controller, namespace: GreatProgWeb
@@ -24,6 +26,8 @@ defmodule GreatProgWeb do
       import Plug.Conn
       import GreatProgWeb.Gettext
       alias GreatProgWeb.Router.Helpers, as: Routes
+
+      unquote(verified_routes())
     end
   end
 
@@ -90,8 +94,19 @@ defmodule GreatProgWeb do
       import GreatProgWeb.ErrorHelpers
       import GreatProgWeb.Gettext
       alias GreatProgWeb.Router.Helpers, as: Routes
+
+      unquote(verified_routes())
     end
   end
+
+  def verified_routes do
+     quote do
+       use Phoenix.VerifiedRoutes,
+         endpoint: GreatProgWeb.Endpoint,
+         router: GreatProgWeb.Router,
+         statics: GreatProgWeb.static_paths()
+     end
+   end
 
   @doc """
   When used, dispatch to the appropriate controller/view/etc.

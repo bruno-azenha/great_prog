@@ -28,6 +28,8 @@ defmodule GreatProgWeb.ConnCase do
 
       # The default endpoint for testing
       @endpoint GreatProgWeb.Endpoint
+
+      use GreatProgWeb, :verified_routes
     end
   end
 

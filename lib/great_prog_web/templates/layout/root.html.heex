@@ -16,14 +16,14 @@
     <nav class="px-4 py-4 bg-gray-800 ">
       <div class="flex justify-between text-gray-300 lg:mx-auto lg:max-w-4xl">
         <div class="">
-          <%= link "Greatness Programmer", to: Routes.home_path(@conn, :index), class: "text-xl normal-case" %>
+          <%= link "Greatness Programmer", to: ~p"/", class: "text-xl normal-case" %>
         </div>
         <div class="flex">
           <div class="">
-            <%= link gettext("Challenge"), to: Routes.blog_show_path(@conn, :show, "100-calls-challenge"), class: "" %>
+            <%= link gettext("Challenge"), to: ~p"/blog/#{"100-calls-challenge"}", class: "" %>
           </div>
           <div class="ml-4">
-            <%= link gettext("Blog"), to: Routes.blog_index_path(@conn, :index), class: "" %>
+            <%= link gettext("Blog"), to: ~p"/blog", class: "" %>
           </div>
         </div>
       </div>
