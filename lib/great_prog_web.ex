@@ -100,13 +100,13 @@ defmodule GreatProgWeb do
   end
 
   def verified_routes do
-     quote do
-       use Phoenix.VerifiedRoutes,
-         endpoint: GreatProgWeb.Endpoint,
-         router: GreatProgWeb.Router,
-         statics: GreatProgWeb.static_paths()
-     end
-   end
+    quote do
+      use Phoenix.VerifiedRoutes,
+        endpoint: GreatProgWeb.Endpoint,
+        router: GreatProgWeb.Router,
+        statics: GreatProgWeb.static_paths()
+    end
+  end
 
   @doc """
   When used, dispatch to the appropriate controller/view/etc.

@@ -14,7 +14,7 @@ defmodule GreatProg.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: GreatProg.PubSub},
       # Start the Endpoint (http/https)
-      GreatProgWeb.Endpoint,
+      GreatProgWeb.Endpoint
       # Start a worker by calling: GreatProg.Worker.start_link(arg)
       # {GreatProg.Worker, arg}
     ]

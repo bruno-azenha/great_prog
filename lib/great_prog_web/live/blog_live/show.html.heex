@@ -1,15 +1,13 @@
 <div class="mx-4 lg:mx-auto lg:max-w-4xl">
-
   <div class="mt-2 rounded bg-slate-200 ">
     <div class="flex items-center justify-between p-2">
-      <%# Back Button %>
+      
       <%= link to: Routes.blog_index_path(@socket, :index) do %>
-      <div class="p-2 rounded-full bg-slate-300 hover:bg-slate-400">
-        <%= GreatProgWeb.Icons.chevron_left() %>
-      </div>
+        <div class="p-2 rounded-full bg-slate-300 hover:bg-slate-400">
+          <%= GreatProgWeb.Icons.chevron_left() %>
+        </div>
       <% end %>
 
-      <%# Author and Publish Date %>
       <div class="flex flex-col items-end ml-4">
         <div class="">
           <%= gettext("Author: ") %><%= @post.author %>
@@ -21,8 +19,7 @@
     </div>
   </div>
 
-
   <div class="w-auto my-8 prose max-w-none">
-    <%= raw @post.body %>
+    <%= raw(@post.body) %>
   </div>
 </div>
