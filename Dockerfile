@@ -12,10 +12,11 @@
 #   - https://pkgs.org/ - resource for finding needed packages
 #   - Ex: hexpm/elixir:1.13.2-erlang-24.2.1-debian-bullseye-20210902-slim
 #
-ARG BUILDER_IMAGE="hexpm/elixir:1.13.2-erlang-24.2.1-debian-bullseye-20210902-slim"
-ARG RUNNER_IMAGE="debian:bullseye-20210902-slim"
+ARG BUILDER_IMAGE="hexpm/elixir:1.15.7-erlang-24.3.4.15-debian-bookworm-20231009-slim"
+ARG RUNNER_IMAGE="debian:bookworm-20240110-slim"
 
 FROM ${BUILDER_IMAGE} as builder
+ENV DEBIAN_FRONTEND=noninteractive
 
 # install build dependencies
 RUN apt-get update -y && apt-get install -y build-essential git nodejs npm \
