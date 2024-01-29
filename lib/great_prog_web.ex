@@ -63,6 +63,20 @@ defmodule GreatProgWeb do
     end
   end
 
+  def component do
+    quote do
+      use Phoenix.HTML
+      use Phoenix.Component
+
+      import GreatProgWeb.ErrorHelpers
+      import GreatProgWeb.Gettext
+
+      alias GreatProgWeb.Router.Helpers, as: Routes
+
+      unquote(verified_routes())
+    end
+  end
+
   def router do
     quote do
       use Phoenix.Router

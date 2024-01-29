@@ -4,28 +4,10 @@ defmodule GreatProg.Testimonials do
   def get_all() do
     [
       %Testimonial{
-        name: "John Doe",
+        name: "Natalia Tykhonravova",
         text:
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        avatar_url: "https://avatars.githubusercontent.com/u/1?v=4"
-      },
-      %Testimonial{
-        name: "Jane Doe",
-        text:
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        avatar_url: "https://avatars.githubusercontent.com/u/2?v=4"
-      },
-      %Testimonial{
-        name: "John Smith",
-        text:
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        avatar_url: "https://avatars.githubusercontent.com/u/3?v=4"
-      },
-      %Testimonial{
-        name: "Jeff Smith",
-        text:
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        avatar_url: "https://avatars.githubusercontent.com/u/4?v=4"
+          "I highly recommend these coaching sessions with Bruno to anyone looking to improve and succeed in their professional life. The support, guidance, and personalized attention provided by him have been invaluable, and I am confident that anyone who participates in these sessions will see similar benefits.",
+        avatar_filename: "natalia_tykhonravova.jpg"
       }
     ]
   end

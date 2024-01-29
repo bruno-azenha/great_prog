@@ -1,9 +1,11 @@
 defmodule GreatProgWeb.Components do
-  use Phoenix.Component
+  use GreatProgWeb, :component
+
+  alias GreatProgWeb.Endpoint
 
   attr :name, :string, required: true
   attr :text, :string, required: true
-  attr :avatar_url, :string, required: true
+  attr :avatar_filename, :string, required: true
 
   def testimonial(assigns) do
     ~H"""
@@ -14,7 +16,7 @@ defmodule GreatProgWeb.Components do
       <div class="flex items-center mt-6">
         <div class="avatar">
           <div class="w-12 h-12 rounded-full">
-            <img src={@avatar_url} />
+            <img src={Routes.static_path(Endpoint, "/images/#{@avatar_filename}")} />
           </div>
         </div>
         <div class="ml-5 text-lg font-bold text-white">

@@ -1,3 +1,3 @@
 defmodule GreatProg.Entities.Testimonial do
-  defstruct [:name, :text, :avatar_url]
+  defstruct [:name, :text, :avatar_filename]
 end
