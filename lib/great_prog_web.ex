@@ -93,6 +93,8 @@ defmodule GreatProgWeb do
 
       import GreatProgWeb.ErrorHelpers
       import GreatProgWeb.Gettext
+      import GreatProgWeb.Components
+
       alias GreatProgWeb.Router.Helpers, as: Routes
 
       unquote(verified_routes())

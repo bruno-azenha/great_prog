@@ -16,6 +16,35 @@
 </div>
 
 <%!-- Life Coaching Section --%>
-<div class="bg-white">
-  <div class="text-black"></div>
+<div class="flex flex-col items-center justify-center p-6 bg-white ">
+  <div class="text-4xl font-extrabold text-black">
+    <%= gettext("Life Coaching") %>
+  </div>
+  <div class="mt-4 text-sm text-center text-gray-400">
+    <%= gettext(
+      "Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ) %>
+  </div>
+  <div class="w-full mt-4 bg-cover aspect-w-4 aspect-h-3 bg-appreciation-wall" />
+</div>
+
+<%!-- Testimonials Section --%>
+<div class="flex flex-col items-center justify-center p-6 bg-zinc-900">
+  <div class="text-4xl font-extrabold text-white">
+    <%= gettext("Testimonials") %>
+  </div>
+  <div class="mt-4 text-sm text-center text-zinc-400">
+    <%= gettext(
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    ) %>
+  </div>
+
+  <div class="grid w-full max-w-screen-lg gap-6 mt-8 sm:grid-cols-2 sm:gap-y-8">
+    <.testimonial
+      :for={testimonial <- @testimonials}
+      name={testimonial.name}
+      text={testimonial.text}
+      avatar_url={testimonial.avatar_url}
+    />
+  </div>
 </div>
