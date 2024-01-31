@@ -30,9 +30,13 @@ module.exports = {
         wiggle: 'wiggle 1s ease-in-out infinite',
       },
       fontFamily: {
-        body: ['Nunito'],
+        body: ['Rambla'],
         highlight: ['Alegreya Sans']
+      },
+      fontSize: {
+        '2.5xl': '22px',
       }
     }
   }
 }
+

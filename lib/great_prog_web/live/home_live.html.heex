@@ -1,48 +1,62 @@
 <%!-- Header Section --%>
 <div class="relative w-full h-screen bg-center bg-no-repeat bg-cover bg-hero-mobile sm:bg-hero-desktop sm:flex">
   <div class="absolute flex flex-col items-center justify-center top-1/2 sm:top-1/3 sm:left-2/3 sm:items-start sm:justify-normal">
-    <div class="text-4xl font-extrabold text-white">
-      <%= gettext("Hi, I'm Bruno") %>
-    </div>
-    <div class="mt-2.5 px-6 text-left text-white sm:px-0 sm:w-4/5 text-sm font-normal">
+    <div class="mt-2.5 px-4 text-center text-white text-2xl capitalize drop-shadow-[0_0px_10px_rgba(0,0,0,1.0)]">
       <%= gettext(
-        "I empower tech leaders to challenge assumptions,rewrite beliefs and discover the best versions of themselves."
+        "I empower tech leaders to challenge assumptions, rewrite beliefs and discover the best versions of themselves."
       ) %>
     </div>
-
-    <.link
-      href="https://calendly.com/coach-bruno/have-an-insight"
-      target="_blank"
-      class="w-4/6 px-16 py-5 text-center text-white bg-green-800 border border-green-500 rounded mt-7"
-    >
-      <%= gettext("Let's get started") %>
-    </.link>
   </div>
 </div>
 
-<%!-- Life Coaching Section --%>
-<%!-- <div class="flex flex-col items-center justify-center p-6 bg-white ">
-  <div class="text-4xl font-extrabold text-black">
-    <%= gettext("Life Coaching") %>
+<%!-- About Me Section --%>
+<%!-- <div class="flex flex-col px-4 py-8 bg-white">
+  <div class="text-2xl">
+    <%= gettext("Hi, I'm") %>
   </div>
-  <div class="mt-4 text-sm text-center text-gray-400">
+  <div class="text-3xl">
+    Bruno Azenha
+  </div>
+  <div class="mt-8 text-2xl leading-9 tracking-wide">
     <%= gettext(
-      "Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "I empower tech leaders to challenge assumptions, rewrite beliefs and discover the best versions of themselves."
     ) %>
   </div>
-  <div class="w-full mt-4 bg-cover aspect-w-4 aspect-h-3 bg-appreciation-wall" />
+  <div class="mt-6 text-2xl leading-9">
+    <%= gettext(
+      "I empower tech leaders to challenge assumptions, rewrite beliefs and discover the best versions of themselves."
+    ) %>
+  </div>
+
+  <div class="self-center mt-6">
+    <.button text={gettext("Have an Insight")} link="#" />
+  </div>
 </div> --%>
+
+<%!-- TODO: Bridge --%>
+<%!-- <div class="w-full h-48 bg-gray-950"></div> --%>
+
+<%!-- Products Section --%>
+<div class="grid gap-16 px-4 py-8 bg-white cols-1">
+  <.product
+    :for={product <- @products}
+    name={product.name}
+    description={product.description}
+    link={product.link}
+    product_image_filename={product.product_image_filename}
+  />
+</div>
 
 <%!-- Testimonials Section --%>
 <div class="flex flex-col items-center justify-center p-6 bg-zinc-900">
   <div class="text-4xl font-extrabold text-white">
     <%= gettext("Testimonials") %>
   </div>
-  <div class="mt-4 text-sm text-center text-zinc-400">
+  <%!-- <div class="mt-4 text-sm text-center text-zinc-400">
     <%= gettext(
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     ) %>
-  </div>
+  </div> --%>
 
   <div class="grid w-full max-w-screen-lg gap-6 mt-8 sm:grid-cols-2 sm:gap-y-8">
     <.testimonial

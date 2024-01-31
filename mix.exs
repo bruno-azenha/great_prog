@@ -52,7 +52,7 @@ defmodule GreatProg.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:nimble_publisher, "~> 0.1.1"},
       {:makeup_elixir, ">= 0.0.0"},
-      {:phoenix_ui, "~> 0.1.9"},
+      {:heroicons, "~> 0.5.0"},
 
       # Additional packages
 
