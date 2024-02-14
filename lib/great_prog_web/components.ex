@@ -122,6 +122,7 @@ defmodule GreatProgWeb.Components do
   end
 
   attr :quote, :string, required: true
+  attr :author, :string, required: true
   attr :image_filename, :string, required: true
 
   def image_quote(assigns) do
@@ -135,7 +136,8 @@ defmodule GreatProgWeb.Components do
 
       <div class="absolute top-0 flex items-center justify-center w-1/2 h-full right-4">
         <div class="p-2 text-xl text-right text-white border-r-4 border-white sm:text-3xl xl:text-4xl">
-          <%= @quote %>
+          "<%= @quote %>" <br />
+          <%= @author %>
         </div>
       </div>
     </div>
