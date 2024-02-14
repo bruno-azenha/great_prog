@@ -1,7 +1,7 @@
 <%!-- Header Section --%>
-<div class="relative w-full h-screen bg-center bg-no-repeat bg-cover bg-hero-mobile sm:bg-hero-desktop sm:flex">
-  <div class="absolute flex flex-col items-center justify-center top-1/2 sm:top-1/3 sm:left-2/3 sm:items-start sm:justify-normal">
-    <div class="mt-2.5 px-4 text-center text-white text-2xl capitalize drop-shadow-[0_0px_10px_rgba(0,0,0,1.0)]">
+<div class="relative w-full h-screen bg-top bg-no-repeat bg-cover bg-hero-mobile sm:bg-hero-desktop sm:flex">
+  <div class="absolute flex flex-col items-center justify-center top-1/2 sm:top-1/3 sm:left-1/2 sm:mr-20 sm:items-start sm:justify-normal">
+    <div class="mt-2.5 px-4 text-center text-white text-2xl sm:text-2xl lg:text-4xl capitalize drop-shadow-[0_0px_10px_rgba(0,0,0,1.0)]">
       <%= gettext(
         "I empower tech leaders to challenge assumptions, rewrite beliefs and discover the best versions of themselves."
       ) %>
@@ -10,53 +10,62 @@
 </div>
 
 <%!-- About Me Section --%>
-<%!-- <div class="flex flex-col px-4 py-8 bg-white">
+<div
+  class="container flex flex-col w-10/12 px-4 py-8 mx-auto bg-white sm:justify-center sm:w-2/3"
+  id="about"
+>
   <div class="text-2xl">
     <%= gettext("Hi, I'm") %>
   </div>
   <div class="text-3xl">
-    Bruno Azenha
+    Bruno.
   </div>
   <div class="mt-8 text-2xl leading-9 tracking-wide">
-    <%= gettext(
-      "I empower tech leaders to challenge assumptions, rewrite beliefs and discover the best versions of themselves."
-    ) %>
+    I specialize in empowering tech leaders to enhance their communication skills, navigate fast-paced work environments, and avoid burnout.
   </div>
-  <div class="mt-6 text-2xl leading-9">
-    <%= gettext(
-      "I empower tech leaders to challenge assumptions, rewrite beliefs and discover the best versions of themselves."
-    ) %>
+  <div class="mt-8 text-2xl leading-9 tracking-wide">
+    Together, we'll delve into strategies that not only optimize your leadership approach but also foster a thriving work environment.
   </div>
-
-  <div class="self-center mt-6">
-    <.button text={gettext("Have an Insight")} link="#" />
+  <div class="mt-8 text-2xl leading-9 tracking-wide">
+    Let's break through the barriers that may be hindering your personal and professional growth, allowing you to step into your role with confidence, resilience, and a renewed sense of purpose.
   </div>
-</div> --%>
+</div>
 
-<%!-- TODO: Bridge --%>
-<%!-- <div class="w-full h-48 bg-gray-950"></div> --%>
+<%!-- Quote Section --%>
+<div class="container flex flex-col items-center justify-center mx-auto">
+  <div class="w-10/12 sm:w-2/3">
+    <.image_quote
+      quote="Coisa boa, coisa ruim... Quem sabe?"
+      image_filename="smile_horizontal.jpg"
+    />
+  </div>
+</div>
 
-<%!-- Products Section --%>
-<div class="grid gap-16 px-4 py-8 bg-white cols-1">
-  <.product
-    :for={product <- @products}
-    name={product.name}
-    description={product.description}
-    link={product.link}
-    product_image_filename={product.product_image_filename}
-  />
+<%!-- Work with me Section --%>
+<div
+  id="work-with-me"
+  class="container flex flex-col items-center justify-center w-full p-4 mx-auto mt-10 sm:w-3/4"
+>
+  <div class="text-4xl text-zinc-950">Work With Me</div>
+
+  <%!-- Products Section --%>
+  <div class="grid gap-16 px-4 py-8 bg-white cols-1">
+    <.product
+      :for={product <- @products}
+      name={product.name}
+      description_paragraphs={product.description_paragraphs}
+      link={product.link}
+      link_text={product.link_text}
+      product_image_filename={product.product_image_filename}
+    />
+  </div>
 </div>
 
 <%!-- Testimonials Section --%>
-<div class="flex flex-col items-center justify-center p-6 bg-zinc-900">
+<div id="testimonials" class="flex flex-col items-center justify-center p-6 bg-zinc-900">
   <div class="text-4xl font-extrabold text-white">
     <%= gettext("Testimonials") %>
   </div>
-  <%!-- <div class="mt-4 text-sm text-center text-zinc-400">
-    <%= gettext(
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    ) %>
-  </div> --%>
 
   <div class="grid w-full max-w-screen-lg gap-6 mt-8 sm:grid-cols-2 sm:gap-y-8">
     <.testimonial
