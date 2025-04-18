@@ -32,14 +32,8 @@ if config_env() == :prod do
       You can generate one by calling: mix phx.gen.secret
       """
 
-  app_name =
-    System.get_env("FLY_APP_NAME") ||
-      raise "FLY_APP_NAME not available"
-
-  app_url = "https://#{app_name}.fly.dev:443"
-
   config :great_prog, GreatProgWeb.Endpoint,
-    url: [host: app_url],
+    url: [scheme: "https", host: "greatprog.com", port: 443],
     check_origin: :conn,
     http: [
       # Enable IPv6 and bind on all interfaces.
