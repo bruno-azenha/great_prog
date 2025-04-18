@@ -1,39 +1,56 @@
 <%!-- Header Section --%>
-<div class="relative w-full h-screen bg-top bg-no-repeat bg-cover bg-hero-mobile sm:bg-hero-desktop sm:flex">
-  <div class="absolute flex flex-col items-center justify-center top-1/2 sm:top-1/3 sm:left-1/2 sm:mr-20 sm:items-start sm:justify-normal">
-    <div class="mt-2.5 px-4 text-center text-white text-2xl sm:text-2xl lg:text-4xl capitalize drop-shadow-[0_0px_10px_rgba(0,0,0,1.0)]">
+<div class="h-16 sm:h-0"></div>
+<div class="relative pt-24 w-full h-screen bg-top bg-no-repeat bg-cover bg-hero-mobile sm:bg-hero-desktop sm:flex">
+  <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t to-transparent from-black/60 via-black/40"></div>
+  <div class="flex absolute bottom-32 z-10 flex-col justify-center items-center px-6 w-full text-center sm:bottom-auto sm:top-1/2 sm:w-1/2 sm:right-0 sm:left-auto sm:text-right sm:px-10">
+    <div class="mb-6 text-white text-2xl sm:text-3xl lg:text-4xl font-semibold capitalize drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
       <%= gettext(
-        "I empower tech leaders to challenge assumptions, rewrite beliefs and discover the best versions of themselves."
+        "I help tech leaders transform challenges into opportunities for growth, clarity, and sustainable success."
       ) %>
+    </div>
+    <div class="mt-4">
+      <a href="#work-with-me" class="px-6 py-3 text-lg font-semibold text-white bg-emerald-600 rounded-full shadow-lg transition-colors duration-300 transform hover:bg-emerald-700 hover:shadow-xl hover:-translate-y-1">
+        Work With Me
+      </a>
     </div>
   </div>
 </div>
 
 <%!-- About Me Section --%>
 <div
-  class="container flex flex-col w-10/12 px-4 py-8 mx-auto bg-white sm:justify-center sm:w-2/3"
+  class="container flex flex-col px-6 py-16 mx-auto w-full bg-white sm:w-2/3 scroll-mt-20"
   id="about"
 >
-  <div class="text-2xl">
-    <%= gettext("Hi, I'm") %>
+  <div class="text-2xl font-light text-zinc-700">
+    <%= gettext("Hello, I'm") %>
   </div>
-  <div class="text-3xl">
+  <div class="text-4xl font-bold text-zinc-900">
     Bruno.
   </div>
-  <div class="mt-8 text-2xl leading-9 tracking-wide">
-    I specialize in empowering tech leaders to enhance their communication skills, navigate fast-paced work environments, and avoid burnout.
+  <div class="mt-2 text-xl italic text-zinc-700">
+    Executive Coach for Technology Leaders
   </div>
-  <div class="mt-8 text-2xl leading-9 tracking-wide">
-    Together, we'll delve into strategies that not only optimize your leadership approach but also foster a thriving work environment.
+  
+  <div class="mt-8 text-lg leading-relaxed sm:text-xl text-zinc-800">
+    With <span class="font-semibold">a decade of tech industry experience</span> and as a <span class="font-semibold">certified Mindvalley Life Coach</span>, I understand the unique challenges you face in today's rapidly evolving landscape.
   </div>
-  <div class="mt-8 text-2xl leading-9 tracking-wide">
-    Let's break through the barriers that may be hindering your personal and professional growth, allowing you to step into your role with confidence, resilience, and a renewed sense of purpose.
+  
+  <div class="mt-6 text-lg leading-relaxed sm:text-xl text-zinc-800">
+    I specialize in helping engineering managers, CTOs, and tech entrepreneurs develop exceptional communication skills, navigate complex organizational dynamics, and build sustainable work practices that prevent burnout.
+  </div>
+  
+  <div class="mt-6 text-lg leading-relaxed sm:text-xl text-zinc-800">
+    My coaching approach combines <span class="font-semibold">practical tech leadership insights</span> with transformative mindset work, helping you uncover limiting beliefs and replace them with perspectives that drive success.
+  </div>
+  
+  <div class="mt-6 text-lg leading-relaxed sm:text-xl text-zinc-800">
+    Together, we'll create a personalized roadmap that addresses your specific challenges and leverages your unique strengths, allowing you to lead with confidence, authenticity, and vision.
   </div>
 </div>
 
 <%!-- Quote Section --%>
-<div class="container flex flex-col items-center justify-center mx-auto">
-  <div class="w-10/12 sm:w-2/3">
+<div class="py-12 bg-emerald-50">
+  <div class="container px-4 mx-auto w-full sm:w-4/5 lg:w-2/3">
     <.image_quote
       quote="We create other people by how we listen to them."
       author="Michael Neil"
@@ -45,35 +62,429 @@
 <%!-- Work with me Section --%>
 <div
   id="work-with-me"
-  class="container flex flex-col items-center justify-center w-full p-4 mx-auto mt-10 sm:w-3/4"
+  class="container flex flex-col justify-center items-center px-6 py-16 mx-auto w-full bg-white scroll-mt-20"
 >
-  <div class="text-4xl text-zinc-950">Work With Me</div>
+  <div class="mb-4 text-3xl font-bold text-center sm:text-4xl text-zinc-900">Work With Me</div>
+  
+  <div class="mt-2 w-full text-lg text-center sm:text-xl sm:w-4/5 lg:w-2/3 text-zinc-800">
+    I offer targeted coaching solutions designed specifically for technology leaders facing complex challenges in today's rapidly evolving landscape. Choose the approach that best fits your current needs:
+  </div>
 
   <%!-- Products Section --%>
-  <div class="grid gap-16 px-4 py-8 bg-white cols-1">
-    <.product
-      :for={product <- @products}
-      name={product.name}
-      description_paragraphs={product.description_paragraphs}
-      link={product.link}
-      link_text={product.link_text}
-      product_image_filename={product.product_image_filename}
-    />
+  <div class="grid gap-12 py-12 mt-6 w-full max-w-screen-lg sm:gap-16 lg:gap-20">
+    <div 
+      :for={product <- @products} 
+      class="relative pb-8 product-card group sm:pb-0"
+    >
+      <.product
+        name={product.name}
+        description_paragraphs={product.description_paragraphs}
+        link={product.link}
+        link_text={product.link_text}
+        product_image_filename={product.product_image_filename}
+      />
+      <div class="absolute right-0 bottom-0 left-0 mx-auto w-1/3 h-px bg-gradient-to-r from-transparent to-transparent via-zinc-300 sm:hidden"></div>
+    </div>
   </div>
 </div>
 
 <%!-- Testimonials Section --%>
-<div id="testimonials" class="flex flex-col items-center justify-center p-6 bg-zinc-900">
-  <div class="text-4xl font-extrabold text-white">
+<div id="testimonials" class="flex flex-col justify-center items-center p-6 pb-10 sm:p-12 bg-zinc-900 scroll-mt-20">
+  <div class="mb-6 text-3xl font-extrabold text-white sm:mb-8 sm:text-4xl">
     <%= gettext("Testimonials") %>
   </div>
 
-  <div class="grid w-full max-w-screen-lg gap-6 mt-8 sm:grid-cols-2 sm:gap-y-8">
-    <.testimonial
-      :for={testimonial <- @testimonials}
-      name={testimonial.name}
-      text={testimonial.text}
-      avatar_filename={testimonial.avatar_filename}
-    />
+  <div class="relative w-full max-w-screen-lg">
+    <%!-- Scroll Controls for Desktop --%>
+    <div class="hidden absolute -left-4 top-1/2 z-10 transform -translate-y-1/2 sm:-left-8 sm:block">
+      <button id="scroll-left" class="p-2 text-white rounded-full transition-colors duration-300 bg-emerald-600/70 hover:bg-emerald-600/90 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+    </div>
+    
+    <div class="hidden absolute -right-4 top-1/2 z-10 transform -translate-y-1/2 sm:-right-8 sm:block">
+      <button id="scroll-right" class="p-2 text-white rounded-full transition-colors duration-300 bg-emerald-600/70 hover:bg-emerald-600/90 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+
+    <%!-- Mobile Scroll Indicator --%>
+    <div class="flex justify-center mb-4 text-sm text-emerald-400 sm:hidden">
+      <span>← Swipe to see more →</span>
+    </div>
+
+    <%!-- Scrollable Testimonials Container --%>
+    <div class="overflow-hidden px-1 w-full">
+      <div 
+        id="testimonials-container" 
+        class="flex overflow-x-auto gap-4 py-4 scrollbar-hide"
+        style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;"
+      >
+        <div 
+          :for={testimonial <- @testimonials} 
+          class="testimonial-card w-[85%] sm:w-[48%] md:w-[32%] flex-shrink-0 snap-center flex flex-col"
+        >
+          <.testimonial
+            name={testimonial.name}
+            text={testimonial.text}
+            avatar_filename={testimonial.avatar_filename}
+          />
+        </div>
+      </div>
+    </div>
+
+    <%!-- Pagination Dots --%>
+    <div class="flex justify-center mt-6 space-x-2" id="pagination-dots-container">
+      <%!-- Dots will be generated dynamically via JavaScript --%>
+    </div>
   </div>
 </div>
+
+<div class="flex flex-col justify-center items-center py-16 bg-gradient-to-r from-emerald-50 via-emerald-100 to-emerald-50 animate-on-scroll">
+  <div class="container px-6 w-full text-center sm:w-4/5 lg:w-2/3">
+    <div class="mb-5 text-3xl font-bold sm:text-4xl text-zinc-900">Ready to Transform Your Leadership?</div>
+    <div class="mx-auto mb-8 max-w-2xl text-lg sm:text-xl text-zinc-800">Take the first step toward unlocking your full potential as a tech leader.</div>
+    <a 
+      href="#work-with-me" 
+      class="inline-block overflow-hidden relative px-8 py-4 text-xl font-semibold text-white bg-emerald-600 rounded-full shadow-lg transition-all duration-300 transform hover:bg-emerald-700 hover:shadow-xl hover:-translate-y-1 hover:scale-105 group"
+    >
+      <span class="relative z-10">Book Your Free Strategy Session</span>
+      <span class="absolute inset-0 bg-emerald-400 transition-transform duration-300 ease-out origin-left scale-x-0 group-hover:scale-x-100"></span>
+    </a>
+  </div>
+</div>
+
+<%!-- Back to Top Button --%>
+<button id="back-to-top" class="fixed right-6 bottom-6 z-50 p-3 text-white bg-emerald-600 rounded-full shadow-lg opacity-0 transition-all duration-300 transform translate-y-10 hover:bg-emerald-700 focus:outline-none">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
+
+<%!-- Testimonials Scroll JavaScript --%>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add smooth scroll behavior for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          // Get the height of the navbar
+          const navbarHeight = document.getElementById('main-nav').offsetHeight;
+          // Calculate the position to scroll to (target element's position minus navbar height)
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+          
+          // Update URL hash without scrolling
+          history.pushState(null, null, targetId);
+        }
+      });
+    });
+    
+    // Testimonial carousel code
+    const container = document.getElementById('testimonials-container');
+    const scrollLeftBtn = document.getElementById('scroll-left');
+    const scrollRightBtn = document.getElementById('scroll-right');
+    const dotsContainer = document.getElementById('pagination-dots-container');
+    const items = document.querySelectorAll('.testimonial-card');
+    let currentIndex = 0;
+    let itemsPerView = 1;
+    let itemWidth = 0;
+    let maxIndex = 0;
+    let dots = [];
+    
+    // Generate pagination dots based on visible slide positions
+    function generatePaginationDots() {
+      // Clear existing dots
+      dotsContainer.innerHTML = '';
+      dots = [];
+      
+      // Create the appropriate number of dots based on maxIndex + 1
+      for (let i = 0; i <= maxIndex; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'w-2.5 h-2.5 rounded-full bg-zinc-600 cursor-pointer pagination-dot transition-colors duration-300';
+        dot.dataset.index = i;
+        dot.addEventListener('click', () => {
+          currentIndex = i;
+          scrollToIndex(currentIndex);
+          updateActiveDot();
+        });
+        dotsContainer.appendChild(dot);
+        dots.push(dot);
+      }
+      
+      updateActiveDot();
+    }
+    
+    // Calculate visible items and max index
+    function updateLayout() {
+      if (!items.length) return;
+      
+      const containerWidth = container.parentElement.clientWidth;
+      
+      // Get the first item's width including margins
+      const firstItem = items[0];
+      const itemStyles = window.getComputedStyle(firstItem);
+      itemWidth = firstItem.offsetWidth;
+      
+      // Determine items per view based on screen width
+      if (window.innerWidth >= 768) { // md and above
+        itemsPerView = 3;
+      } else if (window.innerWidth >= 640) { // sm
+        itemsPerView = 2;
+      } else { // mobile
+        itemsPerView = 1;
+      }
+      
+      maxIndex = Math.max(0, items.length - itemsPerView);
+      
+      // Regenerate pagination dots based on new maxIndex
+      generatePaginationDots();
+      
+      // Reset scroll position if needed
+      if (currentIndex > maxIndex) {
+        currentIndex = maxIndex;
+        scrollToIndex(currentIndex);
+      }
+      
+      updateActiveDot();
+    }
+    
+    function scrollToIndex(index) {
+      if (!items.length) return;
+      
+      // Calculate scrollPosition more precisely
+      if (index >= 0 && index < items.length) {
+        const targetItem = items[index];
+        const leftPosition = targetItem.offsetLeft - container.offsetLeft;
+        
+        container.scrollTo({
+          left: leftPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+    
+    // Update active dot based on current index
+    function updateActiveDot() {
+      dots.forEach((dot, i) => {
+        if (i === currentIndex) {
+          dot.classList.add('bg-emerald-400');
+          dot.classList.remove('bg-zinc-600');
+        } else {
+          dot.classList.remove('bg-emerald-400');
+          dot.classList.add('bg-zinc-600');
+        }
+      });
+    }
+    
+    // Initialize layout
+    window.addEventListener('load', updateLayout);
+    window.addEventListener('resize', debounce(updateLayout, 200));
+    
+    // Debounce function for resize events
+    function debounce(func, wait) {
+      let timeout;
+      return function() {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, arguments), wait);
+      };
+    }
+    
+    // Throttle function for scroll events
+    function throttle(func, limit) {
+      let inThrottle;
+      return function() {
+        if (!inThrottle) {
+          func.apply(this, arguments);
+          inThrottle = true;
+          setTimeout(() => inThrottle = false, limit);
+        }
+      };
+    }
+    
+    // Set up navigation buttons
+    if (scrollLeftBtn) {
+      scrollLeftBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          scrollToIndex(currentIndex);
+          updateActiveDot();
+        }
+      });
+    }
+    
+    if (scrollRightBtn) {
+      scrollRightBtn.addEventListener('click', () => {
+        if (currentIndex < maxIndex) {
+          currentIndex++;
+          scrollToIndex(currentIndex);
+          updateActiveDot();
+        }
+      });
+    }
+    
+    // Handle scroll events
+    container.addEventListener('scroll', throttle(function() {
+      const scrollPosition = container.scrollLeft;
+      
+      // Find the index of the item closest to the start of the viewport
+      let closestIndex = 0;
+      let minDistance = Infinity;
+      
+      items.forEach((item, index) => {
+        const itemPosition = item.offsetLeft - container.offsetLeft;
+        const distance = Math.abs(scrollPosition - itemPosition);
+        
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestIndex = index;
+        }
+      });
+      
+      if (closestIndex !== currentIndex && closestIndex <= maxIndex) {
+        currentIndex = closestIndex;
+        updateActiveDot();
+      }
+    }, 100));
+    
+    // Add subtle fade-in animation for testimonial cards
+    items.forEach((item, index) => {
+      item.style.opacity = "0";
+      item.style.transform = "translateY(20px)";
+      item.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+      
+      setTimeout(() => {
+        item.style.opacity = "1";
+        item.style.transform = "translateY(0)";
+      }, 100 + (index * 150));
+    });
+    
+    // Initialize after a short delay to ensure layout is complete
+    setTimeout(updateLayout, 100);
+  });
+</script>
+
+<%!-- Add custom styles for scrollbar hiding and animations --%>
+<style>
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  .animate-on-scroll {
+    opacity: 0;
+  }
+  
+  .animate-on-scroll.active {
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  .animate-on-scroll.slide-left.active {
+    animation: slideInLeft 0.8s ease forwards;
+  }
+  
+  .animate-on-scroll.slide-right.active {
+    animation: slideInRight 0.8s ease forwards;
+  }
+  
+  /* Custom background position for mobile hero image */
+  @media (max-width: 639px) {
+    .bg-hero-mobile {
+      /* We're using padding instead of this approach now */
+      /* background-position: 50% 15% !important; */
+    }
+  }
+</style>
+
+<%!-- Scroll Animation JavaScript --%>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Back to top button functionality
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    function toggleBackToTopButton() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove('opacity-0');
+        backToTopButton.classList.remove('translate-y-10');
+      } else {
+        backToTopButton.classList.add('opacity-0');
+        backToTopButton.classList.add('translate-y-10');
+      }
+    }
+    
+    if (backToTopButton) {
+      window.addEventListener('scroll', toggleBackToTopButton);
+      
+      backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+    
+    // Scroll animation setup
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    
+    // Add animation classes to elements
+    document.querySelectorAll('#about > div').forEach((element, index) => {
+      element.classList.add('animate-on-scroll');
+      element.style.animationDelay = `${index * 150}ms`;
+    });
+    
+    document.querySelector('.image_quote').classList.add('animate-on-scroll');
+    
+    document.querySelectorAll('.product-card').forEach((element, index) => {
+      element.classList.add('animate-on-scroll');
+      element.style.animationDelay = `${index * 200}ms`;
+    });
+    
+    // Handle scroll animations
+    function checkScroll() {
+      animatedElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('active');
+        }
+      });
+    }
+    
+    // Initial check
+    setTimeout(checkScroll, 100);
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', checkScroll);
+  });
+</script>

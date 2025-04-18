@@ -4,38 +4,39 @@ defmodule GreatProg.Products do
   def get_all() do
     [
       %Product{
-        name: "Insightful Call",
+        name: "Complimentary Strategy Session",
         description_paragraphs: [
-          "I enjoy having conversations with people and am always happy to help.",
-          "This is a limited time free 1:1 call in which we can go deep and laser-focused on a topic of your choice.",
-          "Maybe you are excited with a new project, maybe you are struggling with some aspect of your life.",
-          "Come with a desire for action and to make things better and we're sure to have a great productive time."
+          "Experience the power of focused coaching with this complimentary 45-minute session designed specifically for tech leaders.",
+          "We'll identify your most pressing leadership challenge and develop at least one actionable strategy you can implement immediately.",
+          "You'll leave with clarity on your next steps and a taste of how transformative our coaching relationship could be for your career.",
+          "This session is perfect for tech leaders who are curious about coaching and want to experience real results before committing to a longer program."
         ],
         link: "https://calendly.com/coach-bruno/have-an-insight",
-        link_text: "Book a Free Insightful Call",
+        link_text: "Book Your Free Strategy Session",
         product_image_filename: "hero_mobile.jpg"
       },
       %Product{
-        name: "3-month package",
+        name: "Leadership Transformation Program (3 Months)",
         description_paragraphs: [
-          "This is the option for you if you are ready to commit to your growth and are looking for a partner to help you along the way.",
-          "We work together over the course of 3 months, including calls at least once every two weeks and unlimited support via email and whatsapp.",
-          "Be prepared to go deep evaluating your mindsets and beliefs, setting goals and taking action towards the future you will create.",
-          "Book a discovery call and let's discuss how I can help you."
+          "This comprehensive coaching program is designed for tech leaders ready to dramatically elevate their leadership effectiveness and quality of life.",
+          "Over three months, we'll work through a structured framework addressing your specific challenges in communication, team dynamics, strategic decision-making, and sustainable performance.",
+          "The program includes bi-weekly 60-minute coaching sessions, personalized action plans after each session, unlimited email support, and emergency check-ins when you need them most.",
+          "Past clients have reported significant improvements in team performance, reduced workplace stress, enhanced work-life balance, and career advancement opportunities."
         ],
         link: "https://calendly.com/coach-bruno/have-an-insight",
-        link_text: "Book a Discovery Call",
+        link_text: "Schedule Your Discovery Call",
         product_image_filename: "sitting_chair_vertical.jpg"
       },
       %Product{
-        name: "Book a Workshop",
+        name: "Team & Leadership Workshops",
         description_paragraphs: [
-          "I am available to give workshops on a variety of topics. I have a few that are ready to go, but I am also happy to create a custom one for your group.",
-          "I have experience with groups of around 20 adult and am always happy to share my knowledge and experience.",
-          "Book a call and let's discuss how I can help your group."
+          "Bring transformative learning experiences to your entire engineering team or leadership group with these customized, interactive workshops.",
+          "Popular topics include 'Effective Communication for Technical Teams', 'Building Psychological Safety in Engineering Cultures', and 'Sustainable High Performance Without Burnout'.",
+          "Each workshop combines evidence-based frameworks with practical exercises designed specifically for technical professionals, ensuring immediate application to your team's challenges.",
+          "Workshops can be delivered remotely or in-person for groups of 5-25 participants, with follow-up materials to ensure lasting impact."
         ],
         link: "https://calendly.com/coach-bruno/have-an-insight",
-        link_text: "Book a Workshop Discovery Call",
+        link_text: "Discuss Your Workshop Needs",
         product_image_filename: "appreciation_wall.jpg"
       }
     ]

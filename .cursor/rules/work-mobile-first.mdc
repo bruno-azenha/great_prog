@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Consider how content is going to look like on a mobile screen first
+
+- Create responsive designs tat will delight viwers
+- All pages should look great in all screen sizes
+- Consider mobil-specific interactions such as the inexistence of hover
