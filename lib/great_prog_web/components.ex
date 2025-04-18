@@ -214,7 +214,7 @@ defmodule GreatProgWeb.Components do
       </div>
 
       <div class="mt-8 text-center">
-        <.button text={@link_text} link={@link} />
+        <.button text={@link_text} link={@link} target="_blank" />
       </div>
     </div>
     """
