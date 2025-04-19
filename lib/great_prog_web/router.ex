@@ -21,6 +21,9 @@ defmodule GreatProgWeb.Router do
     live("/blog", BlogLive.Index, :index)
     live("/blog/:id", BlogLive.Show, :show)
     live("/100_calls_challenge", CallsChallengeLive.Index, :index)
+
+    # Core Values Exercise route
+    live("/exercises/core-values", ValuesExerciseLive, :index)
   end
 
   # Other scopes may use custom stacks.

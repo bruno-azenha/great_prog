@@ -1,0 +1,474 @@
+{
+  "categories": [
+    {
+      "name": "Self & Growth",
+      "values": [
+        {
+          "id": "personal_1",
+          "name": "Integrity",
+          "definition": "Adhering to moral and ethical principles; being honest and truthful in all interactions."
+        },
+        {
+          "id": "personal_2",
+          "name": "Growth",
+          "definition": "Continuous self-improvement and development, both personally and professionally."
+        },
+        {
+          "id": "personal_3",
+          "name": "Curiosity",
+          "definition": "Eagerness to explore, discover, and learn new things with an open mind."
+        },
+        {
+          "id": "personal_4",
+          "name": "Simplicity",
+          "definition": "Embracing clarity, minimalism, and focusing on what truly matters."
+        },
+        {
+          "id": "personal_5",
+          "name": "Authenticity",
+          "definition": "Being true to oneself and others; not pretending to be something you're not."
+        },
+        {
+          "id": "personal_6",
+          "name": "Independence",
+          "definition": "Self-reliance and freedom to make your own choices and decisions."
+        },
+        {
+          "id": "personal_7",
+          "name": "Resilience",
+          "definition": "The ability to recover quickly from difficulties, adapt, and grow stronger through challenges."
+        },
+        {
+          "id": "personal_8",
+          "name": "Discipline",
+          "definition": "Maintaining order and control in your actions, habits, and lifestyle."
+        },
+        {
+          "id": "personal_9",
+          "name": "Balance",
+          "definition": "Harmoniously integrating various aspects of life without overemphasizing any one area."
+        },
+        {
+          "id": "personal_10",
+          "name": "Humor",
+          "definition": "Finding joy and laughter in life, even during difficult times."
+        },
+        {
+          "id": "personal_11",
+          "name": "Health",
+          "definition": "Prioritizing physical and mental wellbeing through conscious choices."
+        },
+        {
+          "id": "personal_12",
+          "name": "Wisdom",
+          "definition": "Seeking deeper understanding, good judgment, and insight beyond mere knowledge."
+        },
+        {
+          "id": "personal_13",
+          "name": "Creativity",
+          "definition": "Using imagination and original ideas to create something meaningful."
+        },
+        {
+          "id": "personal_14",
+          "name": "Courage",
+          "definition": "Facing fears and challenges with strength and determination."
+        }
+      ]
+    },
+    {
+      "name": "Love & Connection",
+      "values": [
+        {
+          "id": "relationships_1",
+          "name": "Love",
+          "definition": "Deep affection, care, and connection with others; willingness to be vulnerable."
+        },
+        {
+          "id": "relationships_2",
+          "name": "Honesty",
+          "definition": "Being truthful and sincere in all relationships and communications."
+        },
+        {
+          "id": "relationships_3",
+          "name": "Empathy",
+          "definition": "Understanding and sharing the feelings of others; seeing from their perspective."
+        },
+        {
+          "id": "relationships_4",
+          "name": "Loyalty",
+          "definition": "Remaining faithful, supportive, and committed to people who matter to you."
+        },
+        {
+          "id": "relationships_5",
+          "name": "Trust",
+          "definition": "Believing in the reliability, truth, and capability of others."
+        },
+        {
+          "id": "relationships_6",
+          "name": "Respect",
+          "definition": "Treating others with consideration, appreciation, and dignity."
+        },
+        {
+          "id": "relationships_7",
+          "name": "Communication",
+          "definition": "Open and clear exchange of thoughts, feelings, and needs with others."
+        },
+        {
+          "id": "relationships_8",
+          "name": "Forgiveness",
+          "definition": "Letting go of resentment and anger; offering second chances."
+        },
+        {
+          "id": "relationships_9",
+          "name": "Compassion",
+          "definition": "Showing kindness and concern for the suffering or misfortunes of others."
+        },
+        {
+          "id": "relationships_10",
+          "name": "Generosity",
+          "definition": "Giving freely of your time, resources, or attention without expecting return."
+        },
+        {
+          "id": "relationships_11",
+          "name": "Family",
+          "definition": "Prioritizing connections with relatives and creating a supportive home environment."
+        },
+        {
+          "id": "relationships_12",
+          "name": "Friendship",
+          "definition": "Valuing and nurturing close, non-romantic relationships based on mutual affection."
+        },
+        {
+          "id": "relationships_13",
+          "name": "Vulnerability",
+          "definition": "Willingness to be open about weaknesses, flaws, and emotions with trusted others."
+        }
+      ]
+    },
+    {
+      "name": "Work & Contribution",
+      "values": [
+        {
+          "id": "career_1",
+          "name": "Achievement",
+          "definition": "Accomplishing goals and receiving recognition for your efforts and success."
+        },
+        {
+          "id": "career_2",
+          "name": "Innovation",
+          "definition": "Creating new ideas, methods, or solutions; being forward-thinking."
+        },
+        {
+          "id": "career_3",
+          "name": "Impact",
+          "definition": "Making a meaningful difference through your work and contributions."
+        },
+        {
+          "id": "career_4",
+          "name": "Learning",
+          "definition": "Continually acquiring new knowledge, skills, and insights in your field."
+        },
+        {
+          "id": "career_5",
+          "name": "Leadership",
+          "definition": "Guiding, influencing, and inspiring others toward a common goal or vision."
+        },
+        {
+          "id": "career_6",
+          "name": "Excellence",
+          "definition": "Striving for the highest quality and standards in your work."
+        },
+        {
+          "id": "career_7",
+          "name": "Collaboration",
+          "definition": "Working effectively with others to create better outcomes than possible alone."
+        },
+        {
+          "id": "career_8",
+          "name": "Challenge",
+          "definition": "Seeking difficult problems that stretch your abilities and stimulate growth."
+        },
+        {
+          "id": "career_9",
+          "name": "Autonomy",
+          "definition": "Having freedom and independence in how you approach your work."
+        },
+        {
+          "id": "career_10",
+          "name": "Financial Security",
+          "definition": "Earning enough to meet your needs and provide stability for yourself and loved ones."
+        },
+        {
+          "id": "career_11",
+          "name": "Recognition",
+          "definition": "Being acknowledged and appreciated for your contributions and achievements."
+        },
+        {
+          "id": "career_12",
+          "name": "Competition",
+          "definition": "Striving to outperform others or previous standards; being the best."
+        },
+        {
+          "id": "career_13",
+          "name": "Mentorship",
+          "definition": "Guiding others in their development; sharing knowledge and experience."
+        },
+        {
+          "id": "career_14",
+          "name": "Mastery",
+          "definition": "Becoming highly skilled and knowledgeable in your chosen field."
+        }
+      ]
+    },
+    {
+      "name": "Impact & Justice",
+      "values": [
+        {
+          "id": "society_1",
+          "name": "Justice",
+          "definition": "Promoting fairness, equality, and moral rightness in society."
+        },
+        {
+          "id": "society_2",
+          "name": "Service",
+          "definition": "Contributing to the welfare of others, communities, or causes."
+        },
+        {
+          "id": "society_3",
+          "name": "Equity",
+          "definition": "Ensuring fair treatment, access, and advancement for all people."
+        },
+        {
+          "id": "society_4",
+          "name": "Sustainability",
+          "definition": "Making choices that protect the environment and future generations."
+        },
+        {
+          "id": "society_5",
+          "name": "Community",
+          "definition": "Building and maintaining meaningful connections with a group of people."
+        },
+        {
+          "id": "society_6",
+          "name": "Responsibility",
+          "definition": "Taking ownership of your actions and their impact on others and society."
+        },
+        {
+          "id": "society_7",
+          "name": "Inclusion",
+          "definition": "Embracing diversity and ensuring everyone feels welcomed and valued."
+        },
+        {
+          "id": "society_8",
+          "name": "Tradition",
+          "definition": "Respecting and maintaining cultural practices, beliefs, and customs."
+        },
+        {
+          "id": "society_9",
+          "name": "Citizenship",
+          "definition": "Actively participating in and contributing to the civic life of your community."
+        },
+        {
+          "id": "society_10",
+          "name": "Legacy",
+          "definition": "Creating a lasting positive impact that extends beyond your lifetime."
+        },
+        {
+          "id": "society_11",
+          "name": "Philanthropy",
+          "definition": "Promoting welfare of others through charitable giving and good works."
+        }
+      ]
+    },
+    {
+      "name": "Spirit & Inner Life",
+      "values": [
+        {
+          "id": "spiritual_1",
+          "name": "Connection",
+          "definition": "Experiencing oneness or relationship with something larger than yourself."
+        },
+        {
+          "id": "spiritual_2",
+          "name": "Grace",
+          "definition": "Extending kindness and forgiveness beyond what might seem deserved."
+        },
+        {
+          "id": "spiritual_3",
+          "name": "Mindfulness",
+          "definition": "Being fully present and engaged in the current moment."
+        },
+        {
+          "id": "spiritual_4",
+          "name": "Wonder",
+          "definition": "Maintaining a sense of awe and appreciation for life's mysteries."
+        },
+        {
+          "id": "spiritual_5",
+          "name": "Faith",
+          "definition": "Believing in something beyond the material world or empirical evidence."
+        },
+        {
+          "id": "spiritual_6",
+          "name": "Gratitude",
+          "definition": "Appreciating and acknowledging the good in your life."
+        },
+        {
+          "id": "spiritual_7",
+          "name": "Harmony",
+          "definition": "Seeking peaceful coexistence and alignment with others and nature."
+        },
+        {
+          "id": "spiritual_8",
+          "name": "Purpose",
+          "definition": "Living with a sense of meaning and direction beyond self-interest."
+        },
+        {
+          "id": "spiritual_9",
+          "name": "Transcendence",
+          "definition": "Experiences that go beyond ordinary limits or material existence."
+        },
+        {
+          "id": "spiritual_10",
+          "name": "Presence",
+          "definition": "Being fully engaged in the here and now, without distraction."
+        },
+        {
+          "id": "spiritual_11",
+          "name": "Serenity",
+          "definition": "Finding inner peace and calm regardless of external circumstances."
+        }
+      ]
+    },
+    {
+      "name": "Exploration & Play",
+      "values": [
+        {
+          "id": "adventure_1",
+          "name": "Freedom",
+          "definition": "Living without restrictions or constraints; self-determination."
+        },
+        {
+          "id": "adventure_2",
+          "name": "Risk-taking",
+          "definition": "Willingness to step outside your comfort zone and face uncertainty."
+        },
+        {
+          "id": "adventure_3",
+          "name": "Discovery",
+          "definition": "Exploring new places, ideas, or experiences with an open mind."
+        },
+        {
+          "id": "adventure_4",
+          "name": "Play",
+          "definition": "Engaging in activities for pure enjoyment rather than practical purpose."
+        },
+        {
+          "id": "adventure_5",
+          "name": "Spontaneity",
+          "definition": "Embracing unplanned experiences and going with the flow."
+        },
+        {
+          "id": "adventure_6",
+          "name": "Adventure",
+          "definition": "Seeking exciting, novel experiences outside of routine life."
+        },
+        {
+          "id": "adventure_7",
+          "name": "Variety",
+          "definition": "Experiencing different activities, environments, and relationships."
+        },
+        {
+          "id": "adventure_8",
+          "name": "Thrill",
+          "definition": "Pursuing experiences that create excitement or exhilaration."
+        },
+        {
+          "id": "adventure_9",
+          "name": "Novelty",
+          "definition": "Seeking new and different experiences, ideas, or possessions."
+        },
+        {
+          "id": "adventure_10",
+          "name": "Exploration",
+          "definition": "Investigating and discovering new territories, ideas, or possibilities."
+        }
+      ]
+    }
+  ],
+  "reflections": {
+    "Integrity": "How do you honor your integrity when faced with difficult choices?",
+    "Growth": "In what area of your life are you currently experiencing the most growth?",
+    "Curiosity": "What questions are you currently exploring in your life?",
+    "Simplicity": "Where could you bring more simplicity into your daily routine?",
+    "Authenticity": "When do you feel most authentic and true to yourself?",
+    "Independence": "How do you balance independence with connection to others?",
+    "Resilience": "What challenge has most strengthened your resilience?",
+    "Discipline": "What daily disciplines serve your highest goals?",
+    "Balance": "Which areas of your life need more attention to create better balance?",
+    "Humor": "How does humor help you navigate life's challenges?",
+    "Health": "What one habit could you change to better honor your health?",
+    "Wisdom": "What life experience has taught you the most valuable wisdom?",
+    "Creativity": "How do you express your creativity in everyday life?",
+    "Courage": "What courageous conversation or action is calling you now?",
+    "Love": "How do you express love to the important people in your life?",
+    "Honesty": "Where do you find it most challenging to be completely honest?",
+    "Empathy": "When have you most deeply understood someone else's perspective?",
+    "Loyalty": "How do you demonstrate loyalty in your relationships?",
+    "Trust": "What helps you build or rebuild trust with others?",
+    "Respect": "How do you show respect to people with different views than yours?",
+    "Communication": "What one change could improve your most important communications?",
+    "Forgiveness": "Who might benefit from your forgiveness right now?",
+    "Compassion": "How do you practice self-compassion when you make mistakes?",
+    "Generosity": "In what ways do you express generosity beyond material giving?",
+    "Family": "What family tradition or value is most meaningful to you?",
+    "Friendship": "What qualities do you most value in your closest friendships?",
+    "Vulnerability": "When did being vulnerable lead to a deeper connection?",
+    "Achievement": "What achievement are you currently working toward?",
+    "Innovation": "How do you cultivate innovative thinking in your work?",
+    "Impact": "What impact do you hope to have through your work?",
+    "Learning": "What new skill or knowledge are you currently developing?",
+    "Leadership": "How would you describe your leadership philosophy?",
+    "Excellence": "In what area do you strive for excellence rather than perfection?",
+    "Collaboration": "What makes collaboration successful for you?",
+    "Challenge": "What challenging goal is currently stretching you?",
+    "Autonomy": "How much autonomy do you need to do your best work?",
+    "Financial Security": "What does financial security mean in your life?",
+    "Recognition": "What form of recognition is most meaningful to you?",
+    "Competition": "How does healthy competition improve your performance?",
+    "Mentorship": "Who has been a significant mentor in your life?",
+    "Mastery": "What skill or subject are you currently mastering?",
+    "Justice": "How do you stand up for justice in your daily life?",
+    "Service": "How do you serve others or your community?",
+    "Equity": "What inequities do you feel called to address?",
+    "Sustainability": "What sustainable practices do you prioritize?",
+    "Community": "How do you contribute to building community?",
+    "Responsibility": "What responsibility do you take most seriously?",
+    "Inclusion": "How do you create inclusive environments?",
+    "Tradition": "What traditions give meaning to your life?",
+    "Citizenship": "How do you express your citizenship?",
+    "Legacy": "What legacy do you hope to leave?",
+    "Philanthropy": "How do you practice philanthropy in your life?",
+    "Connection": "When do you feel most spiritually connected?",
+    "Grace": "How do you extend grace to yourself and others?",
+    "Mindfulness": "What mindfulness practices support your wellbeing?",
+    "Wonder": "What fills you with a sense of wonder?",
+    "Faith": "How does faith guide your decisions?",
+    "Gratitude": "What are you most grateful for right now?",
+    "Harmony": "Where do you find harmony in your life?",
+    "Purpose": "What gives you a sense of purpose?",
+    "Transcendence": "When have you experienced transcendence?",
+    "Presence": "How do you practice being fully present?",
+    "Serenity": "What brings you serenity during difficult times?",
+    "Freedom": "How do you express your freedom in daily life?",
+    "Risk-taking": "What calculated risk might be worth taking?",
+    "Discovery": "What recent discovery has excited you?",
+    "Play": "How do you incorporate play into your adult life?",
+    "Spontaneity": "When did spontaneity lead to an unexpected joy?",
+    "Adventure": "What adventure are you currently planning or dreaming about?",
+    "Variety": "How do you bring variety into your routine?",
+    "Thrill": "What thrilling experience has taught you something about yourself?",
+    "Novelty": "How do you satisfy your desire for novelty?",
+    "Exploration": "What are you currently exploring in your life?"
+  }
+} 

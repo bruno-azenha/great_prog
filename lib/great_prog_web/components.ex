@@ -8,7 +8,7 @@ defmodule GreatProgWeb.Components do
     <nav id="main-nav" class="fixed top-0 z-50 w-full shadow-sm backdrop-blur-sm transition-all duration-300 bg-white/95">
       <%!-- Mobile Navbar --%>
       <div class="flex justify-between items-center px-4 py-3 lg:hidden">
-        <a href="#" class="text-3xl font-bold text-emerald-800 transition-colors duration-300">
+        <a href="/" class="text-3xl font-bold text-emerald-800 transition-colors duration-300">
           Bruno Azenha
         </a>
 
@@ -34,7 +34,7 @@ defmodule GreatProgWeb.Components do
 
       <%!-- Desktop Navbar --%>
       <div class="container hidden px-6 py-4 mx-auto lg:flex lg:items-center lg:justify-between">
-        <a href="#" class="text-3xl font-bold text-emerald-800 transition-colors duration-300">
+        <a href="/" class="text-3xl font-bold text-emerald-800 transition-colors duration-300">
           Bruno Azenha
         </a>
 
@@ -127,9 +127,10 @@ defmodule GreatProgWeb.Components do
 
   defp navbar_items() do
     [
-      %{text: "About", link: "#about"},
-      %{text: "Work With Me", link: "#work-with-me"},
-      %{text: "Testimonials", link: "#testimonials"}
+      %{text: "About", link: "/#about"},
+      %{text: "Work With Me", link: "/#work-with-me"},
+      %{text: "Testimonials", link: "/#testimonials"},
+      %{text: "Values Exercise", link: "/exercises/core-values"}
     ]
   end
 

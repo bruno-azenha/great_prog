@@ -1,0 +1,48 @@
+<div class="h-8"></div>
+<div id="values-exercise" class="container px-4 py-16 mx-auto sm:px-6 lg:px-8 values-exercise"
+     phx-hook="ValuesExercise"
+     data-current-step={@current_step}>
+  <h1 class="mb-12 text-4xl font-bold text-center text-emerald-800">Core Values Exercise</h1>
+
+  <%= case @current_step do %>
+    <% :intro -> %>
+      <.live_component
+        module={GreatProgWeb.ValuesExerciseLive.IntroComponent}
+        id="intro"
+        debug_mode={@debug_mode}
+      />
+
+    <% :selection -> %>
+      <.live_component
+        module={GreatProgWeb.ValuesExerciseLive.SelectionComponent}
+        id="selection"
+        values_data={@values_data}
+        selected_values={@selected_values}
+        debug_mode={@debug_mode}
+      />
+
+    <% :comparison -> %>
+      <.live_component
+        module={GreatProgWeb.ValuesExerciseLive.ComparisonComponent}
+        id="comparison"
+        current_value={@current_value}
+        ranked_values={@ranked_values}
+        comparison_index={@comparison_index}
+        comparisons_completed={@comparisons_completed}
+        remaining_values={@remaining_values}
+        low={@low}
+        high={@high}
+        top_n={@top_n}
+        debug_mode={@debug_mode}
+      />
+
+    <% :results -> %>
+      <.live_component
+        module={GreatProgWeb.ValuesExerciseLive.ResultsComponent}
+        id="results"
+        ranked_values={@ranked_values}
+        values_data={@values_data}
+        debug_mode={@debug_mode}
+      />
+  <% end %>
+</div> 
